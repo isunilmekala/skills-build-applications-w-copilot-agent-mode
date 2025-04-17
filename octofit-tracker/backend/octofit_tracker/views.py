@@ -7,8 +7,13 @@ from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, Lea
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    base_url = 'https://glowing-yodel-7xq7qwxj6q6hrv9p-8000.app.github.dev/'
     return Response({
-        'message': 'Welcome to the OctoFit Tracker API!'
+        'users': base_url + 'api/users/?format=api',
+        'teams': base_url + 'api/teams/?format=api',
+        'activities': base_url + 'api/activities/?format=api',
+        'leaderboard': base_url + 'api/leaderboard/?format=api',
+        'workouts': base_url + 'api/workouts/?format=api'
     })
 
 class UserViewSet(viewsets.ModelViewSet):
