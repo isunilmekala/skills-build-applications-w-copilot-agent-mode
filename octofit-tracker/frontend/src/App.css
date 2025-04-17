@@ -1,0 +1,78 @@
+/* Updated styles for OctoFit Tracker */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #4682b4; /* Steel blue */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #2b2834; /* Dark background */
+  padding: 10px;
+}
+
+nav a {
+  color: #61dafb; /* Light blue links */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #ffffff; /* White on hover */
+}
+
+button {
+  background-color: #4682b4; /* Steel blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a9bd4; /* Lighter blue */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #4682b4; /* Steel blue */
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray */
+}
+
+table tr:hover {
+  background-color: #ddd; /* Darker gray */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2b2834; /* Dark text */
+}
